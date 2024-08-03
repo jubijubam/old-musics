@@ -1,0 +1,111 @@
+.container {
+	background-image: url('fundo.png');
+	display: grid;
+	grid-auto-columns: 1fr;
+	grid-auto-rows: 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+	'top'
+	'conteudo'
+	'conteudo'
+	'conteudo';
+	margin: 0 auto;
+	max-height: 2000px;
+}
+
+.butao {
+	background-color: #9a947c;
+	margin-left: 600px;
+	margin-right: 700px;
+	border-radius: 20px;
+	margin-bottom: 500px;
+}
+
+.top {
+	grid-area: top;
+	background-color: #637566;
+}
+
+.conteudo {
+	grid-area: conteudo;
+}
+
+#click {
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+	padding: 10px 20px;
+	background-color: #851e25;
+	box-shadow: 0 4px rgba(153, 0, 0, 0.5);
+	transition: all 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+
+}
+#click:active{
+	background: #851e25;
+    box-shadow: 0 2px rgba(153, 0, 0, 0.5);
+    transform: translateY(2px);
+}
+
+#click:focus {
+    outline: none;
+}
+
+@keyframes click-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#click:active {
+    animation: click-animation 0.1s ease-out;
+}
+
+p {
+	font-family: Orbitron;
+	font-size: 30px;
+	margin-left: 850px;
+}
+
+h3 {
+	font-family: Orbitron;
+	font-size: 30px;
+}
+
+h1 {
+	font-family: Honk;
+	font-size: 100px;
+	margin-left: 450px;
+	margin-top: 100px;
+}
+
+.orbitron {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.honk {
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 15,
+    "SHLN" 50;
+}
+.meio{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+}
